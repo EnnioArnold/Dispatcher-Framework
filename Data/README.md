@@ -19,23 +19,6 @@ Wird von `InitAllSettings.xaml` gelesen. Erwartete Schlüssel:
 > `InitAllSettings.xaml` besitzt Standardwerte für Pfad (`Data\Config.xlsx`), Asset-Name
 > (`Dispatcher_Config_JSON`) und Blattname (`Settings`). Diese können beim Aufruf überschrieben werden.
 
-## Orchestrator-Text-Asset (moderner Override)
-
-Zusätzlich liest `InitAllSettings.xaml` ein **Text-Asset** (Default-Name `Dispatcher_Config_JSON`)
-und deserialisiert dessen JSON direkt in das `Config`-Dictionary. **JSON-Werte überschreiben die
-Excel-Werte** — so lässt sich die Konfiguration zentral im Orchestrator pflegen, ohne die lokale
-`Config.xlsx` anzufassen.
-
-Beispiel-JSON-Inhalt des Assets:
-
-```json
-{
-  "QueueName": "Dispatcher_Main_Queue",
-  "PrimaryKeyColumn": "EditierteKundenNr",
-  "ChunkSize": 5000
-}
-```
-
 ## Queue-Voraussetzung im Orchestrator
 
 Die Ziel-Queue muss mit **„Enforce Unique References = Yes"** angelegt sein. `PopulateQueue.xaml`
