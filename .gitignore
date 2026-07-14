@@ -1,0 +1,21 @@
+# UiPath Studio local/internal artifacts
+.local/
+.entities/
+.objects/
+.project/
+.settings/
+.templates/
+.tmh/
+
+# Editor/session-local artifacts
+.claude/
+~*.xaml
+
+# Internal/confidential documentation - do not publish
+rpa.pdf
+
+# Local configuration with real paths/queue names - do not publish
+Data/Config.xlsx
+
+# Old backup, not needed in the repo
+Main.xaml.sequence-backup.txt

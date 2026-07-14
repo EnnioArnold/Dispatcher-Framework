@@ -1,0 +1,6 @@
+{
+  "Name": "Dispatcher Framework",
+  "ProjectType": "Process",
+  "Description": "Leerer Prozess",
+  "MainFile": "Main.xaml"
+}
